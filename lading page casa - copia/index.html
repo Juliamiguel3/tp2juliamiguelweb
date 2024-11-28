@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina principal</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        #todo{
+            background: url(img/fono\ pagina\ principal.svg);
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        /* comienzo del header */
+        header {
+        width: 1000px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 20px;
+        background-color: rgba(235, 214, 203); 
+        border-radius: 15px;
+        z-index: 120;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        #enlaces {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+        #enlaces a {
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16px; 
+            color: #07334C; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            transition: color 0.3s ease, background-color 0.3s ease; 
+        }
+
+        #enlaces a:hover {
+            color: rgb(143, 190, 220); 
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 5px;
+        }
+
+        #marca {
+            display: flex;
+            align-items: center;
+        }
+
+        #boton-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .boton-app {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff; 
+            background-color: #07334C; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+        .boton-app:hover {
+            background-color: #0a4f7b; 
+            transform: scale(1.05); 
+        }
+        /* fin del header */
+        
+        
+        /* comienzo del inicio */
+        #todoinicio{
+            height: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #imagenfondo{
+            height: 900px;
+            position: relative;
+            left: 580px;
+            bottom: 20px;
+            z-index: 40;
+        }
+        #intro{
+            width: 1000px;
+            height: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+            z-index: 100;
+        }
+        #textointro{
+            width: 500px;
+            margin-top: 300px;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .boton-container {
+            display: flex;
+        }
+
+
+        #boton-app {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff; 
+            background-color: #07334C; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+  
+        #boton-app:hover {
+            background-color: #0a4f7b; 
+            transform: scale(1.05); 
+        }
+        /* fin del inicio */
+
+                
+        /* comienzo de beneficios */
+        
+        #beneficios {
+        padding: 20px;
+        height: 550px;
+        }
+
+
+        #todosbeneficios {
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 40px; 
+        justify-content: center; 
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        #todosbeneficios > div {
+        background-color: rgba(235, 214, 203); 
+        border-radius: 10px; 
+        padding: 15px;
+        width: 250px; 
+        text-align: center; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+
+
+        #todosbeneficios > div:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+        }
+
+        #todosbeneficios #imgbeneficio img {
+        width: 100%;
+        height: auto; 
+        border-radius: 5px; 
+        margin-bottom: 10px;
+        }
+
+        #todosbeneficios p#beneficio {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 16px; 
+        color: #333; 
+        line-height: 1.5; 
+        }
+        #h2beneficios{
+            margin-left: 300px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            display: flex;
+            justify-content: left;
+        }
+
+        /* fin de beneficios */
+
+        /* comienzo de elegirnos */
+
+
+        #elegirnos{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 100px;
+        }
+        #imagenelegirnos{
+            width: 500px;
+        }
+        #textoelegirnos{
+            width: 700px;
+            font-size: 20px;
+            margin-left: 200px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* fin de elegirnos */
+
+        /* comienzo de footer */
+        footer {
+        color: black;
+        position: relative; 
+        height: 100px; 
+        display: flex;
+        justify-content: center;
+        }
+        .logofooter {
+        position: absolute; 
+        bottom: 20px; 
+        left: 318px; 
+        }
+
+        .logofooter img {
+        height: 70px; 
+        width: auto; 
+        }
+        .footer-container {
+        position: absolute; 
+        right: 300px; 
+        bottom: 30px;
+        text-align: right; 
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .footer-container p {
+        font-size: 15px;
+        color: #07334C;
+        margin-bottom: 5px; 
+        }
+
+        .social-icons {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+        }
+
+        .social-icons a {
+        color: #07334C;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+        color:  rgba(235, 214, 203);
+        }
+        #enlacesfooter {
+        width: 700px;
+        text-align: center; 
+        position: absolute;
+        left: 600px;
+        bottom: 50px;
+        }
+
+        #enlacesfooter a {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 18px; 
+        text-decoration: none; 
+        color: #07334C; 
+        margin: 0 15px; 
+        transition: color 0.3s ease; 
+        }
+
+        #enlacesfooter a:hover {
+        color:rgba(235, 214, 203); 
+        }
+
+        /* fin del footer */
+    </style>
+</head>
+<body>
+    <div id="todo">
+        <!-- comienzo del header -->
+        <header>
+            <div id="marca">
+                <img src="img/Group99.svg" alt="logo1" width="250" height="50">
+            </div>
+            <nav id="enlaces">
+                <a href="landing-page.html">Inicio</a>
+                <a href="como-funciona.html">¿Como funciona?</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+            </nav>
+            <div id="boton-container">
+                <a href="https://www.figma.com/proto/IrMn2xQILei2bmPtvSPtn4/Wireframes?node-id=595-3740&starting-point-node-id=595%3A3740" class="boton-app">Descarga la app gratis</a>
+            </div>
+        </header>
+        <!-- fin del header -->
+         <!-- comienzo de inicio -->
+        <div id="todoinicio">
+            <div id="imagenfondo">
+                <img src="img/fondoinicionuevo.png" alt="fondoinicio" height="950" width="950">
+            </div>
+            <section id="intro">
+                <div id="textointro">
+                    <h1>Safety: Tu Refugio Digital para la Salud Mental</h1>
+                    <p>Safety es una app gratuita diseñada para ayudar a reducir el estrés y mejorar tu bienestar. Con meditaciones guiadas, ejercicios de respiración y herramientas de relajación, Safety es el apoyo que necesitas en los momentos críticos.</p>
+                </div>
+                <div class="boton-container">
+                    <a href="https://www.figma.com/proto/IrMn2xQILei2bmPtvSPtn4/Wireframes?node-id=595-3740&starting-point-node-id=595%3A3740" id="boton-app">Descarga la app gratis</a>
+                </div>
+            </section>
+        </div>
+        <!-- fin de inicio -->
+        <!-- comienzo de por que elerginos -->
+        <section id="elegirnos">
+            <div id="imagenelegirnos">
+                <img src="img/imginicio1.jpg" alt="incio">
+            </div>
+            <div id="textoelegirnos">
+                <h2 id="¿Porqueelegirnos?">¿Por que elegirnos?</h2>
+                <p>Safety no es solo una aplicación, es un refugio para tu bienestar mental. Nos enfocamos en ofrecer herramientas accesibles y efectivas que realmente marquen una diferencia en momentos de ansiedad, estrés y búsqueda de calma. Creemos en la importancia de un apoyo sencillo y confiable.</p>
+            </div>
+        </section>
+        <!-- fin de por que elegirnos -->
+         <!-- comienzo de beneficios -->
+        <div id="fondobeneficios">
+            <section id="beneficios">
+                <article id="textobeneficios">
+                    <h2 id="h2beneficios">beneficios claves</h2>
+                    <div id="todosbeneficios">
+                        <div id="beneficio1">
+                            <div id="imgbeneficio1"><img src="img/beneficios4.jpg" alt="beneficio1" height="250" width="250"></div>
+                            <p id="beneficiotexto1">Videos de meditación y ejercicios de relajación</p>
+                        </div>
+                        <div id="beneficio2">
+                            <div id="imgbeneficio2"><img src="img/beneficios3.jpg" alt="beneficio2" height="250" width="250"></div>
+                            <p id="beneficiotexto2">Botón de respiración para momentos de ansiedad</p>
+                        </div>
+                        <div id="beneficio3">
+                            <div id="imgbeneficio3"><img src="img/beneficios2.jpg" alt="beneficio3" height="250" width="250"></div>
+                            <p id="beneficiotexto3">Actividades diseñadas para reducir el estrés</p>
+                        </div>
+                        <div id="beneficio4">
+                            <div id="imgbeneficio4"><img src="img/beneficios1.jpg" alt="beneficio4" height="250" width="250"></div>
+                            <p id="beneficiotexto4">Interfaz intuitiva y fácil de usar</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <!-- fin de beneficios -->
+         <!-- comienzo del footer -->
+        <footer>
+            <div class="logofooter">
+                <img src="img/Group99.svg" alt="logo" height="250" width="250">
+            </div>
+            <div id="enlacesfooter">
+                <a href="contactanos.html">Contactanos</a>
+                <a href="Politicas-de-privacidad.html">Politicas de privacidad</a>
+                <a href="terminos-y-condiciones.html">Terminos y condiciones</a>
+            </div>
+            <div class="footer-container">
+                <p>Síguenos en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/tu-pagina" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+
+
+
+
+    <script src="jc/jquery-3.7.1.min.js"></script>
+
+
+    <script>
+        $(".boton").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("footer").offset().top
+                }, 800);
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contactanos</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<style>
+        #todo{
+           background: url(img/fondo\ contactos.svg);
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        /* comienzo del header */
+        header {
+        width: 1000px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 20px;
+        background-color: rgba(235, 214, 203); 
+        border-radius: 15px;
+        z-index: 120;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #enlaces {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #enlaces a {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            color: #07334C;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: color 0.3s ease, background-color 0.3s ease; 
+        }
+
+        #enlaces a:hover {
+            color: rgb(143, 190, 220);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        #marca {
+            display: flex;
+            align-items: center;
+        }
+
+        #boton-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .boton-app {
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #07334C;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .boton-app:hover {
+            background-color: #0a4f7b;
+            transform: scale(1.05);
+        }
+
+        /* fin del header */
+        
+        /* comienzo del cuerpo */
+        #contactanos {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 70px;
+            padding-top: 90px;
+            text-align: center;
+            background-color:  rgb(233, 251, 253);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #contactanos h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        p{
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+        }
+
+        .contact-item h2 {
+            font-size: 1.2rem;
+            color: #07334C;
+        }
+
+        .contact-item a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .contact-item a:hover {
+            color: #07334C;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        #contact-form label {
+            font-weight: bold;
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact-form button {
+            background-color: #07334C;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #0a4f7b;
+        }
+        /* fin del cuerpo */
+
+        /* comienzo del footer */
+        footer {
+        background-color: #8fbedc;
+        margin-left: auto;
+        margin-right: auto;
+        color: #07334C;
+        position: relative;
+        height: 100px;
+        }
+        .logofooter {
+        position: absolute;
+        bottom: 20px;
+        left: 318px;
+        }
+
+        .logofooter img {
+        height: 70px;
+        width: auto;
+        }
+        .footer-container {
+        position: absolute;
+        right: 300px;
+        bottom: 25px;
+        text-align: right;
+        color: #07334C;
+        }
+
+        .footer-container p {
+        font-size: 15px;
+        color: #07334C; 
+        margin-bottom: 5px;
+        }
+
+        .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        }
+
+        .social-icons a {
+        color: #07334C;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+        color:  rgba(235, 214, 203);
+        }
+        #enlacesfooter {
+        width: 700px;
+        text-align: center;
+        position: absolute;
+        left: 600px;
+        bottom: 50px;
+        }
+
+        #enlacesfooter a {
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        text-decoration: none;
+        color: #07334C;
+        margin: 0 15px; 
+        transition: color 0.3s ease;
+        }
+
+        #enlacesfooter a:hover {
+        color:rgba(235, 214, 203);
+        }
+        /* fin del footer */
+</style>
+</head>
+<body>
+    <div id="todo">
+        <!-- comienzo del header -->
+        <header>
+            <section id="marca">
+                <img src="img/Group99.svg" alt="logo1" width="250" height="50">
+            </section>
+            <nav id="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="como-funciona.html">¿Como funciona?</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+            </nav>
+            <div id="boton-container">
+                <a href="https://www.figma.com/proto/IrMn2xQILei2bmPtvSPtn4/Wireframes?node-id=595-3740&starting-point-node-id=595%3A3740" class="boton-app">Descarga la app gratis</a>
+            </div>
+        </header>
+        <!-- fin del header -->
+        <!-- comienzo de cuerpo -->
+        <section id="contactanos">
+            <h1>Contáctanos</h1>
+            <p>Si tienes alguna pregunta o necesitas ayuda, no dudes en comunicarte con nosotros a través de los siguientes medios:</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h2>Email</h2>
+                    <p><a href="mailto:soporte@tuempresa.com">julia.miguel@davinci.edu.ar</a></p>
+                </div>
+                <div class="contact-item">
+                    <h2>Teléfono</h2>
+                    <p><a href="tel:+123456789">2395-43-3971</a></p>
+                </div>
+            </div>
+            <form id="contact-form">
+                <h2>Déjanos un mensaje</h2>
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <!-- fin del cuerpo -->
+        <!-- comienzo del footer -->
+        <footer>
+            <div class="logofooter">
+                <img src="img/Group99.svg" alt="logo" height="250" width="250">
+            </div>
+            <div id="enlacesfooter">
+                <a href="contactanos.html">Contactanos</a>
+                <a href="Politicas-de-privacidad.html">Politicas de privacidad</a>
+                <a href="terminos-y-condiciones.html">Terminos y condiciones</a>
+            </div>
+            <div class="footer-container">
+                <p id="siguenos">Síguenos en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/tu-pagina" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+
+</body>
+</html>

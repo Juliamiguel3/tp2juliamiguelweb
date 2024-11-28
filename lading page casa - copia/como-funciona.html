@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        #todo{
+           background: url(img/fondo\ como\ funciona.svg);
+           font-family: Arial, Helvetica, sans-serif;
+        }
+        /* comienzo del header */
+        header {
+        width: 1000px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 20px;
+        background-color: rgba(235, 214, 203); 
+        border-radius: 15px;
+        z-index: 120;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+
+
+        #enlaces {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+
+        #enlaces a {
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16px; 
+            color: #07334C; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            transition: color 0.3s ease, background-color 0.3s ease; 
+        }
+
+
+        #enlaces a:hover {
+            color: rgb(143, 190, 220); 
+            background-color: rgba(255, 255, 255, 0.1); 
+            border-radius: 5px; 
+        }
+
+
+        #marca {
+            display: flex;
+            align-items: center;
+        }
+
+
+        #boton-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .boton-app {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #07334C; 
+            padding: 10px 20px; 
+            border-radius: 25px; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+        }
+
+
+        .boton-app:hover {
+            background-color: #0a4f7b; 
+            transform: scale(1.05); 
+        }
+
+        /* fin del header */
+        
+        /* comienzo del cuerpo */
+        .imagen1{
+            padding-top: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #textoimg1{
+            font-size: 20px;
+            width: 500px;
+            color: #07334C;
+        }
+        .imagen2{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #textoimg2{
+            font-size: 20px;
+            width: 500px;
+            color: #07334C;
+        }
+        .imagen3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #textoimg3{
+            font-size: 20px;
+            width: 500px;
+            color: #07334C;
+        }
+        .imagen4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #textoimg4{
+            font-size: 20px;
+            width: 500px;
+            color: #07334C;
+        }
+        .imagen5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #textoimg5{
+            font-size: 20px;
+            width: 500px;
+            color: #07334C;
+        }
+
+        article {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        article.show {
+        opacity: 1;
+        transform: translateY(0);
+        }
+
+        /* fin del cuerpo */
+
+        /* comienzo del footer */
+        footer {
+        background-color: rgb(143, 190, 220);
+        color: #07334C;
+        position: relative; 
+        height: 100px; 
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .logofooter {
+        position: absolute; 
+        bottom: 20px; 
+        left: 318px; 
+        }
+
+        .logofooter img {
+        height: 70px;
+        width: auto; 
+        }
+        .footer-container {
+        position: absolute;
+        right: 300px; 
+        bottom: 25px;
+        text-align: right; 
+        }
+
+        .footer-container p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        color: #07334C;
+        margin-bottom: 5px; 
+        }
+
+        .social-icons {
+        display: flex;
+        justify-content: center; 
+        gap: 20px; 
+        }
+
+        .social-icons a {
+        color: #07334C;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+        color:  rgba(235, 214, 203);
+        }
+        #enlacesfooter {
+        width: 700px;
+        text-align: center; 
+        position: absolute;
+        left: 600px;
+        bottom: 50px;
+        }
+
+        #enlacesfooter a {
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 18px; 
+        text-decoration: none; 
+        color: #07334C; 
+        margin: 0 15px; 
+        transition: color 0.3s ease; 
+        }
+
+        #enlacesfooter a:hover {
+        color:rgba(235, 214, 203);
+        }
+        /* fin del footer */       
+    </style>
+</head>
+<body>
+    <div id="todo">
+        <!-- comienzo del header -->
+        <header>
+            <section id="marca">
+                <img src="img/Group99.svg" alt="logo1" width="250" height="50">
+            </section>
+            <nav id="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="como-funciona.html">¿Como funciona?</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+            </nav>
+            <div id="boton-container">
+                <a href="https://www.figma.com/proto/IrMn2xQILei2bmPtvSPtn4/Wireframes?node-id=595-3740&starting-point-node-id=595%3A3740" class="boton-app">Descarga la app gratis</a>
+            </div>
+        </header>
+        <!-- fin del header -->
+        <!-- comienzo de cuerpo -->
+        <section id="comofunciona">
+            <article class="imagen1">
+                <div id="textoimg1">
+                    <h2 id="¿Comofunciona?">¿Como funciona?</h2>
+                    <p>Nuestra app está diseñada para ayudarte a conectar contigo mismo de forma fácil y efectiva. Desde registrar tus emociones hasta acceder a ejercicios de relajación, todo está pensado para que encuentres calma y equilibrio en tu rutina diaria.</p>
+                </div>
+                <div id="mockup1">
+                    <img src="img/mockup1.png" alt="comofunciona1" width="500">
+                </div>
+            </article>
+            <article class="imagen2">
+                <div id="mockup2">
+                    <img src="img/mockup2.png" alt="comofunciona1" width="500">
+                </div>
+                <div id="textoimg2">
+                    <h2 id="¿Comofunciona?1">Explora tu bienestar</h2>
+                    <p>Accede a videos, frases motivacionales y actividades diseñadas para ayudarte a cuidar tu mente y emociones. Todo en un solo lugar, adaptado a tus necesidades.</p>
+                </div>
+            </article>
+            <article class="imagen3">
+                <div id="textoimg3">
+                    <h2 id="¿Comofunciona?2">Lleva el control de tus emociones</h2>
+                    <p>Registra cómo te sientes cada día y reflexiona sobre tu progreso con herramientas simples y visuales como el calendario emocional.</p>
+                </div>
+                <div id="mockup3">
+                    <img src="img/mockup3.png" alt="comofunciona1" width="500">
+                </div>
+            </article>
+            <article class="imagen4">
+                <div id="mockup4">
+                    <img src="img/mockup4.png" alt="comofunciona1" width="500">
+                </div>
+                <div id="textoimg4">
+                    <h2 id="¿Comofunciona?3">Explora nuestras opciones personalizadas</h2>
+                    <p>Nuestra app está diseñada para adaptarse a tus necesidades de bienestar. Desde meditaciones guiadas hasta recordatorios personalizados, puedes configurar tu experiencia fácilmente en el menú de ajustes. ¡Descubre cómo llevar tu cuidado personal al siguiente nivel!</p>
+                </div>
+            </article>
+            <article class="imagen5">
+                <div id="textoimg5">
+                    <h2 id="¿Comofunciona?4">Tu botón de ayuda inmediata</h2>
+                    <p>Cuando necesites un momento de calma, simplemente presiona el botón de ayuda. Te conectará con ejercicios de relajación, respiración o meditaciones diseñadas para aliviar el estrés en cualquier lugar y momento. ¡Tu bienestar está a un toque de distancia!</p>
+                </div>
+                <div id="mockup5">
+                    <img src="img/mockup5.png" alt="comofunciona1" width="500">
+                </div>
+            </article>
+        </section>
+         <!-- fin del cuerpo -->
+         <!-- comienzo del footer -->      
+        <footer>
+            <div class="logofooter">
+                <img src="img/Group99.svg" alt="logo" height="250" width="250">
+            </div>
+            <div id="enlacesfooter">
+                <a href="contactanos.html">Contactanos</a>
+                <a href="Politicas-de-privacidad.html">Politicas de privacidad</a>
+                <a href="terminos-y-condiciones.html">Terminos y condiciones</a>
+            </div>
+            <div class="footer-container">
+                <p>Síguenos en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/tu-pagina" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+    <script src="jc/jquery-3.7.1.min.js"></script>
+
+    <script>
+                document.addEventListener("DOMContentLoaded", () => {
+        const articles = document.querySelectorAll("article");
+
+        const observer = new IntersectionObserver(
+            (entries, observer) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+                } else {
+                entry.target.classList.remove("show");
+                }
+            });
+            },
+            { threshold: 0.2 }
+        );
+
+        articles.forEach((article) => observer.observe(article));
+        });
+
+    </script>
+</body>
+</html>

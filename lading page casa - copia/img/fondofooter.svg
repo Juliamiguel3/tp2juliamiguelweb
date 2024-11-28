@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 16128 7384.9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e9fbfd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        stroke-width: 9px;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-2, .cls-8, .cls-9 {
+        fill: #8fbedc;
+      }
+
+      .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        stroke: #8fbedc;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        stroke-width: 1.9px;
+      }
+
+      .cls-6 {
+        stroke-width: 9.1px;
+      }
+
+      .cls-7 {
+        stroke-width: 2.9px;
+      }
+
+      .cls-3 {
+        fill: #c6e1ec;
+      }
+
+      .cls-8 {
+        stroke-width: 1.6px;
+      }
+
+      .cls-9 {
+        stroke-width: 5.5px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="-112.9" y="-239.6" width="16331.3" height="7624.5"/>
+  <rect class="cls-3" x="19394.1" y="8387.9" width="66" height="111"/>
+  <rect class="cls-2" x="19394.1" y="8825.4" width="66" height="111"/>
+  <line class="cls-4" x1="19439.5" y1="6959.9" x2="19439.5" y2="7909.9"/>
+  <line class="cls-4" x1="18736.4" y1="8446.1" x2="18736.4" y2="7806.1"/>
+  <path class="cls-6" d="M-112.9,1109.9S1954.9-60,4973.6,589c3018.7,649,4845.1,0,4845.1,0,0,0,1343.3-513.2,3728.1-60.4,2384.8,452.8,2671.6,348.8,2671.6,348.8l-90.6,2231.1L-112.9,3396.4V1109.9Z"/>
+  <rect class="cls-1" x="19746.3" y="6807.9" width="4236.1" height="3612.5"/>
+  <ellipse class="cls-7" cx="21864.4" cy="6959.9" rx="2185.2" ry="1634.8"/>
+  <path class="cls-5" d="M19690.6,9828.9s550.5-180.2,1354.1-80.3c803.6,100,1289.8,0,1289.8,0,0,0,357.6-79.1,992.5-9.3,634.9,69.8,711.2,53.7,711.2,53.7l-24.1,343.7-4323.5,44.3v-352.3Z"/>
+  <image width="1000" height="850" transform="translate(16906.8 6849.4) scale(1.2)" xlink:href="D:\Diseño Web\lading page preentrega\img\img inicio4.jpg"/>
+  <path class="cls-8" d="M17087.9,7890.1c7.7-74,20.1-154.1,38.5-239.7,111.3-517.8-89.4-872.5-89.4-872.5h-392.2s19.7,1112.2,19.7,1112.2h423.4Z"/>
+  <path class="cls-2" d="M5256.2,1211c3.2,0,3.2-5,0-5s-3.2,5,0,5h0Z"/>
+  <path class="cls-2" d="M5098.1-1296.3c3.2,0,3.2-5,0-5s-3.2,5,0,5h0Z"/>
+  <rect class="cls-9" x="-186.4" y="1602.4" width="16500.7" height="5985.9"/>
+</svg>

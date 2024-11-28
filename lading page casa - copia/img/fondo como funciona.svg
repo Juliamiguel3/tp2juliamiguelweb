@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 2027.6 3500">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 9px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: #8fbedc;
+      }
+
+      .cls-1, .cls-2, .cls-4 {
+        stroke: #8fbedc;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 1.4px;
+      }
+
+      .cls-3, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        stroke-width: 1.3px;
+      }
+
+      .cls-5 {
+        fill: #c6e1ec;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="-59.9" y="-48.2" width="2098.8" height="3612.5"/>
+  <rect class="cls-5" x="-412.1" y="1531.8" width="66" height="111"/>
+  <rect class="cls-3" x="-412.1" y="1969.3" width="66" height="111"/>
+  <line class="cls-1" x1="-366.7" y1="103.8" x2="-366.7" y2="1053.8"/>
+  <line class="cls-1" x1="-1069.8" y1="1590" x2="-1069.8" y2="950"/>
+  <ellipse class="cls-4" cx="1013.8" cy="2133.3" rx="1025.1" ry="700.6"/>
+  <ellipse class="cls-2" cx="1019.5" rx="1019.5" ry="817.4"/>
+  <path class="cls-4" d="M-131.8,3517.5s290.1-164.1,713.6-73.1,679.8,0,679.8,0c0,0,188.5-72,523.1-8.5s374.8,48.9,374.8,48.9l-12.7,313-2278.6,40.4v-320.8Z"/>
+</svg>

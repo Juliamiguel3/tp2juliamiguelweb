@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+         #todo{
+            background: url(img/fondopreguntas.svg);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* comienzo del header */
+        header {
+        width: 1000px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+        padding: 20px;
+        background-color: rgba(235, 214, 203); 
+        border-radius: 15px;
+        z-index: 120;
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+
+        #enlaces {
+            display: flex;
+            justify-content: center; 
+            gap: 20px; 
+        }
+
+
+        #enlaces a {
+            font-family: Arial, Helvetica, sans-serif; 
+            font-size: 16px; 
+            color: #07334C; 
+            text-decoration: none; 
+            padding: 5px 10px; 
+            transition: color 0.3s ease, background-color 0.3s ease; 
+        }
+
+        #enlaces a:hover {
+            color: rgb(143, 190, 220);
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        #marca {
+            display: flex;
+            align-items: center;
+        }
+
+        #boton-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .boton-app {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #07334C;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Efecto hover del botón */
+        .boton-app:hover {
+            background-color: #0a4f7b;
+            transform: scale(1.05); 
+        }
+        /* fin del header */
+        /* comienzo de preguntas */
+        #preguntasfrecuentes{
+            width: 700px;
+            height: 500px;
+            margin-left: 600px;
+            padding-top: 150px;
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+        #titulopreguntas{
+            text-align: center;
+        }
+        #pregunta1{
+            padding: 20px;
+            background-color: #e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            box-shadow: 0 2px 8px gray;
+        }
+        #pregunta2{
+            padding: 20px;
+            background-color: #e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            box-shadow: 0 2px 8px gray;
+        }
+        #pregunta3{
+            padding: 20px;
+            background-color: #e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px gray;
+        }
+        #pregunta4{
+            padding: 20px;
+            background-color: #e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px gray;
+        }
+        #pregunta5{
+            padding: 20px;
+            background-color:#e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px gray;
+        }
+        #pregunta6{
+            padding: 20px;
+            background-color: #e9fbfd;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0 2px 8px gray;
+        }
+        .respuesta{
+            display: none;
+        }
+        /* fin de preguntas */
+        /* comienzo de testimonios */    
+        #testimonios{
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+        #clientes{
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #todoslosclientes{
+            width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding-top: 50px;
+            padding: 20px;
+
+        }
+        #testimonio1{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #testimonio2{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #testimonio3{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #testimonio4{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+        #testimonio5{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-family: 15px;
+        }
+        #testimonio6{
+            width: 200px;
+            height: 200px;
+            padding: 10px;
+            padding-top: 30px;
+            box-shadow: 0 2px 8px gray;
+            background-color: rgba(235, 214, 203);
+            border-radius: 10px;
+            text-align: center;
+            font-size: 15px;
+        }
+        /* fin de testimonios */
+        /* comienzo del footer */
+        footer {
+        background-color: rgb(143, 190, 220);
+        color: black;
+        position: relative;
+        height: 100px;
+        }
+        .logofooter {
+        position: absolute;
+        bottom: 20px;
+        left: 318px;
+        }
+
+        .logofooter img {
+        height: 70px;
+        width: auto; 
+        }
+        .footer-container {
+        position: absolute;
+        right: 300px;
+        bottom: 25px;
+        text-align: right; 
+        }
+
+        .footer-container p {
+        font-size: 15px;
+        color: #07334C;   
+        margin-bottom: 5px; 
+        }
+
+        .social-icons {
+        display: flex;
+        justify-content: center; 
+        gap: 20px;
+        }
+
+        .social-icons a {
+        color: #07334C;
+        font-size: 24px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+        color:  rgba(235, 214, 203);
+        }
+        #enlacesfooter {
+        width: 700px;
+        text-align: center; 
+        position: absolute;
+        left: 600px;
+        bottom: 50px;
+        }
+
+        #enlacesfooter a {
+        font-family: 'Arial', sans-serif; 
+        font-size: 18px; 
+        text-decoration: none; 
+        color: #07334C; 
+        margin: 0 15px; 
+        transition: color 0.3s ease; 
+        }
+
+        #enlacesfooter a:hover {
+        color:rgba(235, 214, 203); 
+        }
+        /* fin del footer */ 
+    </style>
+</head>
+<body>
+    <div id="todo">
+        <!-- comienzo del header -->
+        <header>
+            <section id="marca">
+                <img src="img/Group99.svg" alt="logo1" width="250" height="50">
+            </section>
+            <nav id="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="como-funciona.html">¿Como funciona?</a>
+                <a href="preguntas.html">Preguntas frecuentes</a>
+            </nav>
+            <div id="boton-container">
+                <a href="https://www.figma.com/proto/IrMn2xQILei2bmPtvSPtn4/Wireframes?node-id=595-3740&starting-point-node-id=595%3A3740" class="boton-app">Descarga la app gratis</a>
+            </div>
+        </header>
+        <!-- fin del header -->
+        <!-- comienzo de preguntas -->
+        <section id="preguntasfrecuentes">
+            <h2 id="titulopreguntas">preguntas frecuentes</h2>
+            <h3 id="pregunta1"><strong>¿Qué es Safety y cómo puede ayudarme?</strong></h3>
+            <p class="respuesta">Safety es una aplicación diseñada para ayudarte a gestionar tu salud mental y emocional. Ofrece herramientas como ejercicios de respiración, meditaciones guiadas y seguimiento de emociones diarias. Con Safety, puedes llevar un registro de cómo te sientes y acceder a recursos para aliviar el estrés y la ansiedad en cualquier momento del día.</p>
+            <h3 id="pregunta2"><strong>¿Cómo puedo registrar mis emociones en la app?</strong></h3>
+            <p class="respuesta">En Safety, puedes registrar cómo te sientes cada día a través de un sencillo sistema de emociones. Solo tienes que seleccionar un emoticono que refleje tu estado de ánimo actual y escribir una breve nota sobre cómo te sientes, si lo deseas. Esto te permite reflexionar sobre tus emociones a lo largo del tiempo y detectar patrones o cambios.</p>
+            <h3 id="pregunta3"><strong>¿Necesito experiencia en meditación?</strong></h3>
+            <p class="respuesta">No, Safety está pensada tanto para principiantes como para quienes ya practican meditación.</p>
+            <h3 id="pregunta4"><strong>¿Safety es realmente gratuita?</strong></h3>
+            <p class="respuesta">Sí, Safety es gratuita, con acceso a funciones clave como meditaciones, ejercicios de respiración y más.</p>
+            <h3 id="pregunta5"><strong>¿Cómo puede ayudarme Safety en un ataque de ansiedad?</strong></h3>
+            <p class="respuesta">Safety incluye un botón de respiración rápida, diseñado para guiarte en esos momentos difíciles y ayudarte a recuperar la calma.</p>
+            <h3 id="pregunta6"><strong>¿Es seguro usar Safety para hacer un seguimiento de mis emociones?</strong></h3>
+            <p class="respuesta">Sí, Safety prioriza tu privacidad y seguridad. Todos los datos que ingresas en la app, como tus emociones y notas personales, están protegidos y no se comparten con terceros. Solo tú tienes acceso a tu historial y datos, para garantizar que puedas utilizar la app de manera segura y confiable.</p>
+        </section>
+        <!-- fin de preguntas -->
+        <!-- comienzo de testimonios -->
+        <section id="testimonios">
+            <h2 id="clientes">testimonios de usuarios</h2>
+            <article id="todoslosclientes" class="owl-carousel owl-theme">
+                <p id="testimonio1">"Safety me ha ayudado a manejar mis momentos de ansiedad de una forma que ninguna otra app ha logrado." – Ana M.</p>
+                <p id="testimonio2">"Las meditaciones son increíbles, perfectas para desconectar y reconectar." – Carlos L.</p>
+                <p id="testimonio3">"Safety ha sido una herramienta esencial para mi salud mental. Puedo relajarme en minutos con las meditaciones y sentirme más en control durante momentos difíciles." – Lucía R.</p>
+                <p id="testimonio4">"Antes de Safety, no sabía cómo manejar mis ataques de ansiedad. Ahora tengo el botón de respiración al alcance, y me ayuda a recobrar la calma en segundos." – Miguel A.</p>
+                <p id="testimonio5">"Lo mejor de Safety es que siempre está disponible cuando la necesito. Los videos de relajación son perfectos para desconectar y volver a mi centro." – Sofía T.</p>
+                <p id="testimonio6">"Esta app ha cambiado mi rutina. Me ayuda a empezar el día tranquilo y a reducir el estrés en cualquier momento. Safety me recuerda que cuidarme es posible." – Javier P.</p>
+            </article>
+        </section>
+        <!-- fin de testimonios -->
+        <!-- comienzo del footer -->
+        <footer>
+            <div class="logofooter">
+                <img src="img/Group99.svg" alt="logo" height="250" width="250">
+            </div>
+            <div id="enlacesfooter">
+                <a href="contactanos.html">Contactanos</a>
+                <a href="Politicas-de-privacidad.html">Politicas de privacidad</a>
+                <a href="terminos-y-condiciones.html">Terminos y condiciones</a>
+            </div>
+            <div class="footer-container">
+                <p>Síguenos en nuestras redes sociales</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/tu-pagina" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+        <!-- fin del footer -->
+    </div>
+    <script src="jc/jquery-3.7.1.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function()  {
+             $('#todoslosclientes').owlCarousel({
+                    
+            });
+        })
+    </script>
+        <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+                $('#pregunta1').on('click', function() {
+                $(this).next('.respuesta').slideToggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+                $('#pregunta2').on('click', function() {
+                $(this).next('.respuesta').slideToggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+                $('#pregunta3').on('click', function() {
+                $(this).next('.respuesta').slideToggle();
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+            $('#pregunta4').on('click', function() {
+            $(this).next('.respuesta').slideToggle();
+            });
+            });
+        </script>
+         <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+            $('#pregunta5').on('click', function() {
+            $(this).next('.respuesta').slideToggle();
+            });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+            // Toggle FAQ answers
+            $('#pregunta6').on('click', function() {
+            $(this).next('.respuesta').slideToggle();
+            });
+            });
+        </script>
+</body>
+</html>
